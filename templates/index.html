@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Spin it</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/css/style.css" type="text/css"/>
+    </head>
+    <body>
+        <div id="whole">
+        <div id="carousel">
+            <div id="spinner">
+                <!-- SLIDE 1 -->
+                <div class="card border-dark mb-3 slide">
+                    <div class="card-header">Team</div>
+                        <div class="card-body" id="team">
+                            <!-- Team member card 1 -->
+                            <div class="card my-card border-dark mb-2">
+                                <div class="row no-gutters">
+                                    <!-- Team member picture -->
+                                    <div class="col-auto">
+                                        <img src="http://cc-journey-student-profile-images.s3.amazonaws.com/302a14ad-b5b7-4851-bb8f-c521e25122a7" class="img-fluid rounded-left border border-dark" alt="">
+                                    </div>
+                                    <!-- Team member details -->
+                                    <div class="col">
+                                        <div class="card-block px-2">
+                                            <h5 class="card-title text-right">Borsi Balazs</h5>
+                                            <p class="card-text text-right" style="display: inline">Clethcriss</p>
+                                            <img src="http://vectorlogofree.com/wp-content/uploads/2014/04/25657-github-sign-icon-vector-icon-vector-eps.png" class="githubicon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team member card 2 -->
+                            <div class="card my-card border-dark mb-2">
+                                <div class="row no-gutters">
+                                    <!-- Team member picture -->
+                                    <div class="col-md-4">
+                                        <img src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/12744244_1277128655647124_64622499102350461_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeHKMveDMgw2Em6gLFVoOTR0VFw8Qhk0cvUAG172MjJEK4nJcke7ni4DJ6PU2XIY9csENHNRgjGaKoTOTJeAcSIECLaA38QsnYOx5jZnDBb8fA&oh=90e6e53360050407f87063f7ff5c6030&oe=5B6AEFCB" class="img-fluid rounded-left" alt="">
+                                    </div>
+                                    <!-- Team member details -->
+                                    <div class="col">
+                                        <div class="card-block px-2">
+                                            <h5 class="card-title text-right">Szajler Indira</h5>
+                                            <p class="card-text text-right">SzajlerIndira</p>
+                                            <img src="http://vectorlogofree.com/wp-content/uploads/2014/04/25657-github-sign-icon-vector-icon-vector-eps.png" class="githubicon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team member card 3 -->
+                            <div class="card my-card border-dark mb-2">
+                                <div class="row no-gutters">
+                                    <!-- Team member picture -->
+                                    <div class="col-auto">
+                                        <img src="http://cc-journey-student-profile-images.s3.amazonaws.com/707f2bdd-1fe2-44a0-b625-273e27a176c7" class="img-fluid rounded-left" alt="">
+                                    </div>
+                                    <!-- Team member details -->
+                                    <div class="col">
+                                        <div class="card-block px-2">
+                                            <h5 class="card-title text-right">Toth Balazs Roland</h5>
+                                            <p class="card-text text-right">tothbalazsroland</p>
+                                            <img src="http://vectorlogofree.com/wp-content/uploads/2014/04/25657-github-sign-icon-vector-icon-vector-eps.png" class="githubicon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- SLIDE 2 -->
+                <div class="card border-dark mb-3 slide">
+                    <div class="card-header">SLIDE 2</div>
+                    <div class="card-body">
+                        <!-- Write here -->
+                    </div>
+                </div>
+                <!-- SLIDE 3 -->
+                <div class="card border-dark mb-3 slide">
+                    <div class="card-header">SLIDE 3</div>
+                    <div class="card-body">
+                        <!-- Write here -->
+                    </div>
+                </div>
+                <!-- SLIDE 4-->
+                <div class="card border-dark mb-3 slide">
+                    <div class="card-header">SLIDE 4</div>
+                    <div class="card-body">
+                        <!-- Write here -->
+                    </div>
+                </div>
+                <!-- SLIDE 5 -->
+                <div class="card border-dark mb-3 slide">
+                    <div class="card-header">SLIDE 5</div>
+                    <div class="card-body">
+                        <!-- Write here -->
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <!--  left/right arrows on the sides of wheel  -->
+        <span style="float:left" class="ss-icon" onclick="galleryspin('')">&lt;</span>
+        <span style="float:right" class="ss-icon" onclick="galleryspin('-')">&gt;</span>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
+        <script src="/static/script/script.js"></script>
+    </body>
+</html>

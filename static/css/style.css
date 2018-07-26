@@ -1,0 +1,95 @@
+body {
+  background: black;
+  font-family: Avenir,
+  sans-serif;
+  color: black;
+}
+/* wheel body */
+div#carousel {
+  perspective: 3000px;
+  background: white;
+  overflow: hidden;
+}
+/* what spins */
+div#spinner {
+  transform-style: preserve-3d;
+  transform-origin: 50% 50% -500px;
+  transition: 1s;
+  height: 40em;
+  padding-top: 20px;
+}
+/* slides */
+div#spinner div.slide {
+  backface-visibility: visible;
+  width: 50%;
+  height: 80%;
+  position: fixed; left: 25%;
+  transform-origin: 50% 50% -500px;
+  background-color: gainsboro;
+  box-shadow: 0px 0px 20px black;
+}
+
+/* remove or add slides, the deg is decreased with (360 / number of slides) */
+div#spinner .slide:nth-child(1) { transform: rotateY(0deg); }
+div#spinner .slide:nth-child(2) { transform: rotateY(-72deg); }
+div#spinner .slide:nth-child(3) { transform: rotateY(-144deg); }
+div#spinner .slide:nth-child(4) { transform: rotateY(-216deg); }
+div#spinner .slide:nth-child(5) { transform: rotateY(-288deg); }
+
+/* left/right arrows on the sides of wheel */
+div#carousel ~ span {
+  color: gray(*);
+  margin: 5%;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bolder;
+  transition: 0.4s color;
+  position: relative;
+  margin-top: -15rem;
+  border-bottom: none;
+  line-height: 0;
+}
+div#carousel ~ span:hover { color: #888; cursor: pointer; }
+/* slide body, under slide header */
+.card-body {
+  height: 25%;
+}
+/* the team member cards */
+.my-card {
+    background-color: #888888;
+    width: 100%;
+    height: 30%;
+    box-shadow: 0px 0px 5px black;
+    font-size: 25px;
+} h5 {
+    font-size: 25px;
+    font-weight: bolder;
+  }
+/* slide header */
+.card-header {
+  background-color: gray;
+}
+/* part of team member cards, contains name, gihubicon, githubaccount */
+.card-block {
+  text-align: right;
+}
+.githubicon {
+  width: 75px;
+  height: 75px;
+  alignment: center;
+}
+/* github account name */
+.card-text {
+  display: inline;
+}
+/* team member card profile picture class */
+.img-fluid {
+  height: 125px;
+  width: 120px;
+}
+/* team member card profile name */
+.card-title {
+  text-align: left;
+}
+
